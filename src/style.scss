@@ -1,0 +1,44 @@
+.wp-block-gap-stacks {
+	// width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	list-style-type: none;
+	// width: 100%;
+	li::before {
+		font-family: "FontAwesome", "Font Awesome 5 Brands";
+		font-size: var(--wp--preset--font-size--l);
+		content: "+";
+		line-height: normal;
+	}
+	.php {
+		&::before {
+		content: "\f457";
+		}
+	}
+	.wordpress {
+		&::before {
+			content: "\f411";
+		}
+	}
+	.react {
+		&::before {
+			content: "\f41b";
+		}
+	}
+	.javascript {
+		&::before {
+			content: "\f3b8";
+		}
+	}
+	.cpanel {
+		&::before {
+			content: "\f388";
+		}
+	}
+	.github {
+		&::before {
+			content: "\f09b";
+		}
+	}
+}

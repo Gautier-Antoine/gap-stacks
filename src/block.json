@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gap/stacks",
+	"version": "0.1.0",
+	"title": "GAP > Stacks",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block showing stacks",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	},
+	"textdomain": "gap-stacks",
+	"editorScript": ["file:./index.js", "gap-stacks-script"],
+	"editorStyle": "file:./index.css",
+	"style": ["file:./style-index.css", "file:./../includes/font-awesome.min.css"],
+	"render": "file:./render.php"
+}
