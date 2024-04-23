@@ -8,8 +8,8 @@ if (!empty($tags)) {
     <ul <?php echo get_block_wrapper_attributes(); ?>>
         <?php foreach ($tags as $tag) : ?>
             <li
-                class="<?php esc_html_e($tag->slug); ?>"
-                title="<?php esc_html_e($tag->name); ?>"
+                class="<?php echo esc_html($tag->slug); ?>"
+                title="<?php echo esc_html($tag->name); ?>"
             ></li>
         <?php endforeach; ?>
     </ul>
